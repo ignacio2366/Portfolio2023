@@ -4,7 +4,6 @@ import styles from "../assets/styles";
 import pajahtoga from "../images/PajaToga.png";
 import graduation from "../images/graduation.png";
 import { PhotoCert } from "../components/PhotoCard";
-import Mobile from "../images/1.png";
 import academic2023 from "../images/academic2023.jpg";
 import academic2022 from "../images/academic2022.png";
 import award1 from "../images/award1.jpg";
@@ -176,7 +175,7 @@ function AboutMe() {
           <Box1>
             <div>
               <HeaderP style={{ fontSize: "1.5rem" }}>
-                <b>TESDA NC3- JAVA Programming grade 97%</b>
+                <b>TESDA NC3- JAVA Programming grade</b>
               </HeaderP>
               <HeaderP>TESDA Joysis Tech-Voc Inc.</HeaderP>
               <HeaderP>
@@ -239,13 +238,13 @@ function AboutMe() {
   );
 }
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${styles.dark};
 `;
 
-const Header = styled.div`
+export const Header = styled.div`
   width: 100%;
   background-color: ${styles.dark};
   height: auto;
@@ -281,8 +280,8 @@ const HeaderP = styled.p`
   font-family: ${styles.regular};
 `;
 const HeaderHero = styled.img`
-  height: 516px;
-  weight: 411px;
+  height: 450px;
+  weight: auto;
   object-fit: contain;
 `;
 
@@ -308,13 +307,12 @@ const CardContiner = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 30px 10px;
   justify-content: center;
   align-items: center;
 `;
 const Card = styled.div`
   background-color: ${styles.dark};
-  border-color: 10px;
   height: 300px;
   width: 290px;
   border-radius: 10px;

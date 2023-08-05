@@ -6,8 +6,8 @@ export const Navigation = () => {
     <NavigationContainer>
       <HeaderLogo>MAFI</HeaderLogo>
       <NavBox>
-        <NavLink>About Me</NavLink>
-        <NavLink>Careers</NavLink>
+        <NavLink to="/">About Me</NavLink>
+        <NavLink to="/career">Careers</NavLink>
         <NavLink>Sample Works</NavLink>
       </NavBox>
       <HeaderLogo>hi</HeaderLogo>

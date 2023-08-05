@@ -12,19 +12,27 @@ export const PhotoMobile = ({ img, title, context }) => {
   );
 };
 
+export default PhotoMobile;
+
 const Container = styled.div`
   height: 350px;
   width: 450px;
   background-color: ${styles.white};
   box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+
   padding: 0px;
-  margin: 0px;
+  margin: 6px;
 `;
 
 const ImageHolder = styled.img`
-  width: 100%;
-  height: 242px;
+  width: 187px;
+  height: 333px;
   object-fit: fill;
+  border-radius: 20px;
+  border: 2px solid ${styles.cherry};
+  margin: 9px;
 `;
 const Body = styled.div`
   height: 108px;
