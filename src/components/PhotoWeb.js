@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import styles from "../assets/styles";
-export const PhotoMobile = ({ img, title, context }) => {
+export const PhotoWeb = ({ img, title, context }) => {
   return (
     <Container>
       <ImageHolder src={img} />
@@ -12,28 +12,23 @@ export const PhotoMobile = ({ img, title, context }) => {
   );
 };
 
-export default PhotoMobile;
-
 const Container = styled.div`
   height: 350px;
   width: 450px;
   background-color: ${styles.white};
   box-sizing: content-box;
-  display: flex;
-  flex-direction: row;
-  border-radius: 20px;
   padding: 0px;
-  margin: 6px;
+  margin: 0px;
+  border-radius: 20px;
 `;
 
 const ImageHolder = styled.img`
-  width: 187px;
-  height: 333px;
+  width: 100%;
+  height: 242px;
   object-fit: fill;
   border-radius: 20px;
-  border: 2px solid ${styles.light};
-  margin: 9px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 `;
 const Body = styled.div`
   height: 108px;

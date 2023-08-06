@@ -3,9 +3,15 @@ import Navigation from "../components/Navigation";
 import styles from "../assets/styles";
 import systemdev from "../images/SystemDev.png";
 import PhotoMobile from "../components/PhotoMobile";
-import EntryScreen1 from "../images/EntryScreen1.png"
-import Wolly from "../images/wollybuggers.png"
-
+import EntryScreen1 from "../images/EntryScreen1.png";
+import Wolly from "../images/wollybuggers.png";
+import Car from "../images/car3.png";
+import Pilon from "../images/pilon.png";
+import Payment from "../images/payment.png";
+import { PhotoWeb } from "../components/PhotoWeb";
+import Moblyze from "../images/mobylzeweb.jpg";
+import Image7 from "../images/Image7.png";
+import Number13 from "../images/13.jpg";
 function Career(options) {
   return (
     <Container>
@@ -24,7 +30,7 @@ function Career(options) {
         <Article>
           <TextHeader>Web and Mobile Developer – JR Position</TextHeader>
           <TextP>
-            Rooche Digital Company. Texas USA | April 25, 2022 – March 31,2023
+            Rooche Digital Company. Texas USA | April 25, 2022 – Current
           </TextP>
           <ul>
             <TextList>
@@ -49,10 +55,75 @@ function Career(options) {
           </ul>
         </Article>
         <CardContiner>
-            <PhotoMobile img={EntryScreen1} title={"Moblyze"} context={"Develop to find a jobs available in huge industrial in engineering with locations"} />
-            <PhotoMobile img={Wolly} title={"Wolly Bugger"} context={"Fishing Site locator and display the type of fishes from differnt area"} />
-
-       
+          <PhotoMobile
+            img={EntryScreen1}
+            title={"Moblyze"}
+            context={
+              "Moblyze is an app based talent marketplace for the net zero era, focussed primarily on the Energy & Industrial sectors"
+            }
+          />
+          <PhotoMobile
+            img={Wolly}
+            title={"Wolly Bugger"}
+            context={
+              "Fishing Site locator and display the type of fishes from differnt area"
+            }
+          />
+          <PhotoMobile
+            img={Car}
+            title={"Car Rental"}
+            context={"On time Tracing and Tracking of the registered vehicles"}
+          />
+          <PhotoMobile
+            img={Pilon}
+            title={"Loan Management"}
+            context={"On time Tracing and Tracking of the registered vehicles"}
+          />
+          <PhotoWeb
+            img={Moblyze}
+            title={"Moblyze"}
+            context={
+              "Moblyze is an app based talent marketplace for the net zero era, focussed primarily on the Energy & Industrial sectors"
+            }
+          />
+          <PhotoWeb
+            img={Payment}
+            title={"Happy Talk"}
+            context={
+              "Find a person that user is interested talk with payment process"
+            }
+          />
+        </CardContiner>
+      </Section>
+      <Section style={{ backgroundColor: `${styles.light}` }}>
+        <Article>
+          <TextHeader>
+            Web and Application Developer – Trainee Position
+          </TextHeader>
+          <TextP>
+            Top Notch Construction, Cavite | August 25 – November, 25, 2021
+          </TextP>
+          <ul>
+            <TextList>
+              Responsible for Designs, Front End Development using Adobe XD,
+              HTML, CSS with Bootstrap, JavaScript (DOM, jQuery) and ASP.NET MVC
+              Core and SQL as Backend.
+            </TextList>
+            <TextList>
+              Responsible to development a Inventory system for warehouse in 52
+              sites
+            </TextList>
+          </ul>
+        </Article>
+        <CardContiner>
+          <PhotoWeb img={Image7} title={"Tool Management"} context={"Inventory System for Warehouse that will monitor the stocks and distributed of tools."} />
+          <PhotoWeb
+            img={Number13}
+            title={"Dashboard Management"}
+            context={
+              "Monitor the request of the sites from different locations."
+            }
+          />
         </CardContiner>
       </Section>
     </Container>
@@ -95,7 +166,7 @@ const HeaderImg = styled.div`
 `;
 
 const Section = styled.section`
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-color: ${styles.dark};
   display: flex;
@@ -149,9 +220,10 @@ const CardContiner = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px 10px;
   justify-content: center;
   align-items: center;
   margin-top: 35px;
+  padding: 31px 12px;
+  gap: 5px;
 `;
 export default Career;

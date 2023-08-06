@@ -170,7 +170,7 @@ function AboutMe() {
         </CardContiner>
       </Section>
       <Section style={{ backgroundColor: `${styles.dark}` }}>
-        <HeaderTxt>Proffesional Trainings</HeaderTxt>
+        <HeaderTxt>Profesional Trainings</HeaderTxt>
         <Header style={{ backgroundColor: `${styles.light}` }}>
           <Box1>
             <div>
@@ -307,7 +307,7 @@ const CardContiner = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px 10px;
+  gap: 45px 10px;
   justify-content: center;
   align-items: center;
 `;
